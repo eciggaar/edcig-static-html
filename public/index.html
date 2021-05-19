@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Watson Assistant Web Chat Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "bde3115e-392e-453e-be8c-37ad029d5f23", // The ID of this integration.
+			region: "eu-de", // The region your integration is hosted in.
+			serviceInstanceID: "e0e42379-b0ff-407b-8874-4f1f2e5b0dd8", // The ID of your service instance.
+			onLoad: function(instance) { instance.render(); }
+		  };
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		  document.head.appendChild(t);
+		});
+	  </script>
+</head>
+
+<body>
+
+<h1>Rotterdam 2021</h1>
+</body>
+
+</html>
